@@ -1,5 +1,4 @@
-# Congress Stalker
-Welcome to Congress Stalker
+#Welcome to Congress Stalker
 <br>
 By Alastair Beeson and Conor Yuen
 <br>
