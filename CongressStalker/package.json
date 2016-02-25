@@ -1,0 +1,32 @@
+{
+  "name": "congress stalker",
+  "version": "1.0.0",
+  "description": "congress stalker",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sterrr/CongressStalker.git"
+  },
+  "keywords": [
+    "congress",
+    "bill",
+    "legislator",
+    "zip",
+    "stalker"
+  ],
+  "author": "Conor Yuen and Alastair Beeson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sterrr/CongressStalker/issues"
+  },
+  "homepage": "https://github.com/sterrr/CongressStalker#readme",
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "fs": "0.0.2"
+  }
+}
