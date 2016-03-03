@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<% include header.ejs %>
+<div class="contain">
+	<center>
+		<h1>Legislators in Zipcode <b><%= zipNum %></b></h1>
+	</center>
+
+	<% for(var x = 0; x < legislators.length; x++){ 
+
+	if(legislators[x].party == "R") { %>
+	<%= legislators[x].first_name %> <%= legislators[x].last_name %>
+	<br>
+	Republican
+	<br>
+	Twitter Handle: <font color = "red">@<%= legislators[x].twitter %></font>
+	<br>
+	<a first-name="<%= legislators[x].first_name %>" last-name="<%= legislators[x].last_name %>" class="billbutton">Bills sponsored by this Legislator</a>
+	<br>
+	<a first-name="<%= legislators[x].first_name %>" last-name="<%= legislators[x].last_name %>" twitter ="<%= legislators[x].twitter_id %>" party = "<%= legislators[x].party %>" class="savebutton">Save this Legislator</a>
+	<br>
+	<br>
+	<br>
+
+	<% } else if(legislators[x].party == "D") { %>
+	<%= legislators[x].first_name %> <%= legislators[x].last_name %>
+	<br>
+	Democrat
+	<br>
+	Twitter Handle: <font color = "blue">@<%= legislators[x].twitter %></font>
+	<br>
+	<a first-name="<%= legislators[x].first_name %>" last-name="<%= legislators[x].last_name %>" class="billbutton">Bills sponsored by this Legislator</a>
+	<br>
+	<a first-name="<%= legislators[x].first_name %>" last-name="<%= legislators[x].last_name %>" twitter ="<%= legislators[x].twitter_id %>" party = "<%= legislators[x].party %>" class="savebutton">Save this Legislator</a>
+	<br>
+	<br>
+	<br>
+
+	<% } else { %>
+	<%= legislators[x].first_name %> <%= legislators[x].last_name %>
+	<br>
+	Independent
+	<br>
+	Twitter Handle: <font color = "green">@<%= legislators[x].twitter %></font>
+	<br>
+	<a first-name="<%= legislators[x].first_name %>" last-name="<%= legislators[x].last_name %>" class="billbutton">Bills sponsored by this Legislator</a>
+	<br>
+	<a first-name="<%= legislators[x].first_name %>" last-name="<%= legislators[x].last_name %>" twitter ="<%= legislators[x].twitter_id %>" party = "<%= legislators[x].party %>" class="savebutton">Save this Legislator</a>
+	<br>
+	<br>
+	<br>
+	<% } } %>
+
+</div>
+</html>
+
